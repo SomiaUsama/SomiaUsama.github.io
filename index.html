@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Somia Usama</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+/* Style the body */
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+}
+
+/* Header/logo Title */
+
+.header {
+  padding: 80px;
+  text-align: center;
+  background: #575757;
+  color: black;
+}
+#gradient {
+    background-color: #575757;
+    background-image: linear-gradient(to bottom right,#f94079,#ffe682,rgb(92, 193, 252));
+}
+
+/* Increase the font size of the heading */
+.header h1 {
+  font-size: 50px;
+  font-family: cursive;
+}
+.header p {
+    font-size: 25px;
+    font-family: monospace;
+}
+
+
+/* Style the top navigation bar */
+.navbar {
+  overflow: hidden;
+  background-color: #73b8e6;
+}
+
+/* Style the navigation bar links */
+.navbar a {
+  float: left;
+  display: block;
+  color: black;
+  text-align: center;
+  padding: 14px 20px;
+  text-decoration: none;
+  font-family: cursive;
+}
+
+/* Right-aligned link */
+.navbar a.right {
+  float: right;
+}
+
+/* Change color on hover */
+.navbar a:hover {
+  background-color: #ddd;
+  color: rgb(189, 99, 241);
+}
+
+.skills {
+    font-size: medium;
+    font-family: Helvetica;
+}
+/* Column container */
+.row {  
+  display: -ms-flexbox; /* IE10 */
+  display: flex;
+  -ms-flex-wrap: wrap; /* IE10 */
+  flex-wrap: wrap;
+}
+
+/* Create two unequal columns that sits next to each other */
+/* Sidebar/left column */
+.side {
+  -ms-flex: 30%; /* IE10 */
+  flex: 30%;
+  
+  padding: 20px;
+  background-color: black;
+  color: white;
+}
+
+/* Main column */
+.main {   
+  -ms-flex: 70%; /* IE10 */
+  flex: 70%;
+  background-color: white;
+  padding: 20px;
+  text-align: center;
+}
+
+/* Fake image, just for this example */
+.fakeimg {
+  background-color: #aaa;
+  width: 100%;
+  padding: 20px;
+}
+
+/* Footer */
+.footer {
+  padding: 20px;
+  text-align:left;
+  background: #575757;
+  background-image: linear-gradient(to bottom right,#f94079,#ffe682,rgb(92, 193, 252));
+  font-family: fantasy;
+  
+  
+}
+#right {
+    float : right
+}
+.button1{
+  font-size: 24px;
+  padding: 14px 40px;
+  border-radius: 12px;
+  background-color: #575757; color: White;
+  border: 2px solid #4CAF50;
+  transition-duration: 0.4s;
+}
+
+.button1:hover{
+  background-color: #eb0b0b; /* Green */
+  color: white;
+}
+/* Responsive layout - when the screen is less than 700px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 700px) {
+  .row {   
+    flex-direction: column;
+  }
+}
+
+/* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
+@media screen and (max-width: 400px) {
+  .navbar a {
+    float: none;
+    width: 100%;
+  }
+}
+</style>
+</head>
+<body>
+
+
+    
+
+<div class="header" id="gradient">
+
+  <h1>SOMIA USAMA</h1>
+  <p><strong></strong>eat(); sleep(); code(); repeat();</strong></p>
+</div>
+
+<div class="navbar">
+  <a href="https://www.linkedin.com/in/somia-yousaf-80502319a/">LinkedIn</a>
+  <a href="https://github.com/SomiaUsama">GitHub</a>
+  <a href="https://www.instagram.com/somiaausama?igshid=ZGUzMzM3NWJiOQ==">Instagram</a>
+  <a href="https://www.facebook.com/Somiaayousaf" class="right">Facebook</a>
+</div>
+
+<div class="row">
+  <div class="side">
+    <h2>About Me</h2>
+    <h5>Full Stack Developer</h5>
+    <div style="height:200px;"><img src="newimg.JPG" height="250px" width="425px">
+    </div>
+    <br>
+    <br>
+    <br>
+    <p>Want to obtain a challenging position in an organization where I can utilize my knowledge and skills, with an oppprtunity of advancement, being a dynamic, team-spirited and results oriented individual. Proven abilities to work both with own initiative and also as a team member.</p>
+    <h2>Skills</h2>
+    <p class="skills">C<br>
+        C++ <br>
+        Python <br> 
+        Html <br>
+        CSS <br>
+        Javascript <br>
+        Php <br>
+     </p>
+   
+  </div>
+  <div class="main">
+    <br>
+    <br>
+    <h2>Projects</h2>
+    <ul>
+    <p>Car rental System (Desktop Application)</p>
+    <p>Hotel Management System (Website)</p>
+    <p>Blood Bank Management system (Android + Web)</p>
+    </ul>
+    <br>
+    <br>
+    <h2>Education</h2>
+    <h4>BS(hons.) in Computer Science</h4>
+    <ul>
+        <p>Lahore college for women university - Lahore.</p>
+        <p>2015 to 2019</p>
+    </ul>
+    <h4>F.Sc (pre-engineering)</h4>
+    <ul>
+        <p>Central group of colleges - Lahore</p>
+        <p>2013 to 2015</p>
+    </ul>
+    <h4>Matric with Computer Science</h4>
+    <ul>
+        <p>Native public school - Lahore</p>
+        <p>2011 to 2013</p>
+    </ul>
+    <div class="main">
+      <h2>Personal Information</h2>
+      <ul>
+        <p><strong>Date of Birth: </strong>15-02-1998</p>
+        <p><strong>Nationality: </strong>Pakistani</p>
+        <p><strong>Father's name: </strong>Muhammad Yousaf</p>
+        <p><strong>Address: </strong>#47-D PGSHS-1, near Bahria town, Shahkam chowk Lahore.</p>
+    </div>
+    <button id="btn" type="button" class="button1" onclick="myFuntion()">Try this!</button>
+  </div>
+  
+</div>
+
+<div class="footer">
+  <h2>Email us at:   <a href="gmail.com">somiausama3@gmail.com</a>   or Call us: +923354426689</h2>
+  
+</div>
+<script>
+  function myFuntion(){
+  const btn = document.getElementById('btn');
+
+btn.addEventListener('click', function onClick(event) {
+  document.body.style.color = 'red';
+  
+
+  //  Change text color for clicked element only
+  // event.target.style.color = 'salmon';
+});
+  }
+</script>
+
+</body>
+</html>
