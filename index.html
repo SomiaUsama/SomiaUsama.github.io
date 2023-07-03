@@ -132,6 +132,13 @@ body {
   background-color: #eb0b0b; /* Green */
   color: white;
 }
+.confetti{
+  max-width: 640px;
+  display: block;
+  margin: 0 auto;
+  border: 1px solid #ddd;
+  user-select: none;
+}
 /* Responsive layout - when the screen is less than 700px wide, make the two columns stack on top of each other instead of next to each other */
 @media screen and (max-width: 700px) {
   .row {   
@@ -164,13 +171,14 @@ body {
   <a href="https://github.com/SomiaUsama">GitHub</a>
   <a href="https://www.instagram.com/somiaausama?igshid=ZGUzMzM3NWJiOQ==">Instagram</a>
   <a href="https://www.facebook.com/Somiaayousaf" class="right">Facebook</a>
+  <span id="confetti" style="float:right; font-size: 35px; cursor: pointer;">👨🏽‍💻</span>
 </div>
 
 <div class="row">
   <div class="side">
     <h2>About Me</h2>
     <h5>Full Stack Developer</h5>
-    <div style="height:200px;"><img src="newimg.jpg" height="250px" width="425px">
+    <div style="height:200px;"><img src="newimg.JPG" height="250px" width="425px">
     </div>
     <br>
     <br>
@@ -220,7 +228,7 @@ body {
         <p><strong>Date of Birth: </strong>15-02-1998</p>
         <p><strong>Nationality: </strong>Pakistani</p>
         <p><strong>Father's name: </strong>Muhammad Yousaf</p>
-        <p><strong>Address: </strong>#47-D PGSHS-1, near Bahria town, Shahkam chowk Lahore.</p>
+
     </div>
     <button id="btn" type="button" class="button1" onclick="myFuntion()">Try this!</button>
   </div>
@@ -228,9 +236,10 @@ body {
 </div>
 
 <div class="footer">
-  <h2>Email us at:   <a href="gmail.com">somiausama3@gmail.com</a>   or Call us: +923354426689</h2>
+  <h2>Email us at:   <a href="gmail.com">somiausama3@gmail.com</a></h2>
   
 </div>
+<script src="confetti.min.js"></script>
 <script>
   function myFuntion(){
   const btn = document.getElementById('btn');
@@ -243,7 +252,13 @@ btn.addEventListener('click', function onClick(event) {
   // event.target.style.color = 'salmon';
 });
   }
+      let confetti = new Confetti("confetti");
+      confetti.setCount(300);
+      confetti.setPower(35);
+      confetti.setSize(1);
+      confetti.destroyTarget(false);
 </script>
 
 </body>
 </html>
+
